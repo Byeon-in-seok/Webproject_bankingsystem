@@ -1,0 +1,17 @@
+create table member_ (
+   id varchar(20) not null unique,
+   pw varchar(20) not null,
+   name varchar(20) not null,
+   age int not null,
+   account bigint unsigned not null unique,
+   wallet int not null
+);
+
+create table transaction_ (
+   division varchar(20) not null,
+   id varchar(20) not null,
+   send bigint unsigned not null,
+   receive bigint unsigned not null,
+   money int not null,
+   ilsi datetime not null
+);
